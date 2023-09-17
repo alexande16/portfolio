@@ -1,0 +1,322 @@
+@font-face {
+    font-family: 'Nexa';
+    src: url(fonts/Nexa-ExtraLight.ttf);
+}
+:root{
+    --text-color: black;
+    --bg-color: rgba(233, 228, 220, 0.851);
+}
+.dark{
+    --text-color: white;
+    --bg-color: #1b1b1b;
+}
+html{
+    scroll-behavior: smooth;
+    font-family: 'Nexa';
+}
+*{
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+}
+section{
+    min-height: 100vh;
+}
+nav ul{
+    color: var(--text-color);
+    font-weight: bold;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: end;
+    padding: 10px;
+    gap: 30px;
+    font-size: 20px;
+}
+#navegation{
+    gap: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav button{
+    margin: 20px;
+}
+button{
+    color: var(--text-color);
+    text-align: center;
+    gap: 1px;
+    width: 100px;
+    height: 35px;
+    border-radius: 20px;
+    cursor: pointer;
+    border: 1px 1px 1px;
+    box-shadow: 1px 0px 0px var(--text-color);
+}
+nav ul a{
+    color: inherit;
+    text-decoration: none;
+}
+#container{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    padding: 20px;
+
+}
+#container h1{
+    font-size: 50px;
+}
+#redes-sociais img{
+    width: 40px;
+}
+#redes-sociais{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.animate__bounce{
+   animation-duration: 4s;
+   animation-iteration-count: infinite;
+}
+#container h1:hover{
+    scale: 1.2;
+    transition: 0.5s;
+}
+#text{
+    width: 600px;
+    height: 300px;
+    color: var(--text-color);
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+}
+#text p{
+    text-align: center;
+}
+#projetos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#projetos h1{
+    font-size: 40px;
+    color: var(--text-color);
+}
+#card-projetos{
+    color: var(--text-color);
+    height: 400px;
+    padding: 40px;
+    gap: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--bg-color);
+    margin: auto;
+    border-radius: 50px;
+    box-shadow: 1px 1px 10px  black;
+}
+#relogio{
+    margin-top: 40px;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#escolar{
+    margin-top: 40px;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#icon{
+    display: flex;
+    gap: 20px;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+}
+#icon i{
+    cursor: pointer;
+}
+#icon a{
+    text-decoration: none;
+    color: inherit;
+}
+#card-formaçao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--text-color);
+}
+#card-formaçao h1{
+    font-size: 40px;
+}
+.lista{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+.lista ul li{
+    list-style: none;
+    font-size: 25px;
+    font-weight: bold;
+}
+#back{
+    height: 40px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    margin: auto;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid var(--text-color);
+    margin-bottom: 20px;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+@media(max-width: 768px){
+
+    #container h1{
+        font-size: 25px;
+        text-align: center;
+
+    }
+    #container p{
+        font-size: 15px;
+    }
+    #container{
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column-reverse;
+
+    }
+    nav ul{
+        font-size: 15px;
+        width: 100%;
+        margin: auto;
+    }
+    #navegation{
+        width: 100%;
+        
+    }
+    #container img{
+        width: 400px;
+    }
+    #card-projetos{
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        height: 700px;
+    }
+}
+@media(max-width: 500px){
+    #container h1{
+        font-size: 30px;
+        text-align: center;
+        margin: auto;
+
+    }
+    #container p{
+        font-size: 20px;
+        text-align: center;
+        margin: auto;
+    }
+    #container{
+        width: 80%;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    nav ul{
+        font-size: 14px;
+        text-align: center;
+        width: 80%;
+        margin: auto;
+    }
+    nav button{
+       font-size: 10px;
+       padding: 5px;
+       text-align: center;
+    }
+    #navegation{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        margin: auto;
+        
+    }
+    #container img{
+        width: 300px;
+    }
+    #card-projetos{
+        margin: auto;
+        margin: 10px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        height: 520px;
+        width: 250px;
+    }
+    #relogio img{
+        width: 300px;
+        margin: auto;
+    }
+    #ico img{
+        width: 25px;
+    }
+    #escolar img{
+        width: 300px;
+        margin: auto;
+    }
+    #icon img{
+        width: 25px;
+
+    }
+    #card-formaçao{
+        width: 100%;
+        height: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        text-align: center;
+    }
+    #card-formaçao img{
+        display: none;
+    }
+    #card-formaçao h1{
+        font-size: 25px;
+    }
+    #card-formaçao li{
+        font-size: 17px;
+        text-align: center;
+    }
+}
+       
